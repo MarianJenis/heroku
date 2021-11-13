@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route("/")
 @app.route("/<name>")
 def hello_there(name: str = "Robo"):
-    return f"<p>Nazdar, {name}!</p>",200
+    return f"<p>Nazdar, {name}!</p>", 200
 
 if __name__ == '__main__':
     app.run(threaded=True, port=5000)
