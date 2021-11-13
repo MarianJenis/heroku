@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <title>Karlíkova super stránka</title>
+</head>
+
+<body>
+
+    {%block content%}<p>This is where the content will be.</p>{%endblock%}
+
+    <div class="menu">
+        <ul>
+            <a href="{{url_for('index')}}">index</a>
+            <a href="{{url_for('cool_animals_list')}}">cool animals list</a>
+            <a href="{{url_for('memes')}}">memes</a>
+        </ul>
+    </div>
+</body>
+
+</html>
