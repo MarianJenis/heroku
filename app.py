@@ -1,10 +1,11 @@
-from flask import Flask, render_template
+from flask import Flask
 
 app = Flask(__name__)
 
-nordic_animals = ["los", "sob", "tučňák", "vlk", "lední medvěd"]
-
-
 @app.route("/")
-def index():
-    return "<p>Ahoj robo</p>",200
+@app.route("/<name>")
+def hello_there(name: str = "Robo"):
+    return f"<p>Nazdar, {name}!</p>"
+
+if __name__ == '__main__':
+    app.run(threaded=True, port=5000)
