@@ -7,4 +7,4 @@ nordic_animals = ["los", "sob", "tučňák", "vlk", "lední medvěd"]
 
 @app.route("/")
 def index():
-    return "<p>Ahoj robo</p>"
+    return "<p>Ahoj robo</p>",200
